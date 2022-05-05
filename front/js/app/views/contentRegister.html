@@ -1,0 +1,86 @@
+<div class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <form method="" action="" class="form-horizontal" onsubmit="contentController.register(event)">
+          <div class="card ">
+            <div class="card-header card-header-rose card-header-text">
+              <div class="card-text">
+                <h4 class="card-title">Cadastro de conteúdo</h4>
+              </div>
+            </div>
+            <div class="card-body ">
+              <div class="row">
+                <label class="col-sm-2 col-form-label label-checkbox">Tipo de conteúdo:</label>
+                <div class="col-sm-10 checkbox-radios">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input id="radio-photo" onclick="contentController.photo()" class="form-check-input" type="radio" name="tipo"
+                        value="foto" checked> Foto
+                      <span class="circle">
+                        <span class="check"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input id="radio-video" onclick="contentController.video()" class="form-check-input" type="radio" name="tipo"
+                        value="video"> Vídeo
+                      <span class="circle">
+                        <span class="check"></span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <label class="col-sm-2 col-form-label">Título:</label>
+                <div class="col-sm-10">
+                  <div class="form-group">
+                    <input id="titulo" type="text" class="form-control" required="true">
+                    <span class="bmd-help">Escolha um título criativo! ;-)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <label class="col-sm-2 col-form-label">Descrição:</label>
+                <div class="col-sm-10">
+                  <div class="form-group">
+                    <input id="descricao" type="text" class="form-control" required="true">
+                    <span class="bmd-help">Escreva um breve resumo para seu conteúdo!</span>
+                  </div>
+                </div>
+              </div>
+              <div id="arquivo" class="row">
+                <label class="col-sm-2 col-form-label">Imagem:</label>
+                <div class="col-md-4 col-sm-4" style="margin-top: 15px;">
+                  <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                    <div class="fileinput-new thumbnail">
+                      <img src="../../../assets/img/image_placeholder.jpg" alt="...">
+                    </div>
+                    <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                    <div>
+                      <span class="btn btn-rose btn-round btn-file">
+                        <span class="fileinput-new">Selecionar</span>
+                        <span class="fileinput-exists">Escolher</span>
+                        <input id="image-file" type="file" name="..." />
+                      </span>
+                      <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i
+                          class="fa fa-times"></i> Remover</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer ">
+              <label class="col-sm-2 col-form-label"></label>
+              <div class="col-sm-10">
+                <button id="cadasterContent" type="submit" class="btn btn-fill btn-rose">CADASTRAR</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
